@@ -1,0 +1,145 @@
+#site-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  radial-gradient(circle,#f2ede9, #bfa590);
+    z-index: 10;
+    padding-bottom: 4em;
+    margin-bottom: 4em;
+}
+
+
+#site-header #site-title {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    width: 100px;
+}
+
+
+.how-it-works {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .how-it-works-header {
+        margin: 4rem 0;
+    }
+
+    .how-it-works-body {
+        display: flex;
+    }
+
+    .how-it-works-body p {
+        text-align: center;
+        padding-top: 1em;
+        max-width: 12em;
+    }
+
+    .how-it-works-step {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+.how-it-works-section {
+    margin-bottom: 8rem;
+}
+
+.how-it-works-section {
+    .how-it-works-body img,
+    .three-canvas,
+    .gif-frames-container,
+    .preview-cube {
+        width: 256px !important;
+        height: 256px !important;
+    }
+}
+
+.gif-frames-container {
+    position: relative;
+}
+
+.gif-frames {
+    transform: rotateX(-45deg) rotateY(-45deg);
+    transform-style: preserve-3d;
+    width: 256px;
+    height: 256px;
+    margin-left: -30px;
+
+    .gif-frame {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateZ(-30px);
+        transform-style: preserve-3d;
+        canvas {
+            width: 140px;
+            height: 140px;
+            opacity: 0.85;
+            border: 1px solid gray;
+            margin-top: 128px;
+        }
+    }
+}
+
+
+.how-it-works-slice-section {
+    .three-container,
+    .slice-canvas {
+        max-width: 256px; 
+        max-height: 256px;
+    }
+
+    .slice-container {
+        height: auto;
+    }
+}
+
+.how-it-works-print-section {
+    .three-container,
+    .slice-container  {
+        max-width: 256px; 
+        max-height: 256px;
+        width: 256px; 
+        height: 256px;
+    }
+
+    .slice-container {
+        background: url('/images/test-canvas.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .slice-canvas {
+        border: none;
+        max-width: 100px; 
+        max-height: 100px;
+        margin-left: 10px;
+        margin-top: -70px;
+        opacity: 0.85;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .how-it-works-body {
+        flex-direction: column;
+    }
+
+    .how-it-works-step {
+        margin-bottom: 4em;
+    }
+
+    .how-it-works-section {
+        margin-bottom: 2rem;
+    }
+}

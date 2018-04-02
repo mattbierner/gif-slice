@@ -1,0 +1,29 @@
+.site-footer {
+    margin-top: 3em;
+    background: $brand-color;
+    color: $background-color;
+
+    font-size: 12px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+    a {
+        color: $background-color;
+    }
+    
+    .copyright {
+        margin-top: 1.4em;
+    }
+
+    nav {
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 1.6em;
+        display: flex;
+        justify-content: center;
+        
+        a {
+            flex: 1;
+        } 
+    }
+}

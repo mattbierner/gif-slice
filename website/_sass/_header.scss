@@ -1,0 +1,94 @@
+.site-header {
+    max-width: 600px;
+    margin: 10px auto;
+    user-select: none;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  $header-font-family;
+    font-size: 14px;
+    text-align: center;
+
+    .page-links {
+        margin-top: -10px;
+    }
+
+    .page-link {
+        margin: 0 1em;
+
+        a {
+            color: $brand-color;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        &.active a,
+        &.visited a {
+            color: $text-color;
+        }
+        
+        &.disabled a {
+            pointer-events: none;
+            color: rgba($text-color, 0.2);
+        }
+
+        &.active a:hover {
+            color: $brand-color;
+        }
+    }
+
+    .page-links {
+        display: flex;
+    }
+
+    .page-link:before {
+        content: '»';
+        margin-right: 1em;
+        color: rgba($text-color, 0.3);
+    }
+
+    .page-link.active a {
+        border-bottom: 2px solid $text-color;
+        pointer-events: inherit;
+    }
+
+    .page-link a:hover {
+        color: $brand-color;
+        border-color: $brand-color;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+
+    .page-link:first-child:before {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #site-title {
+        width: 80px;
+    }
+
+    .site-nav {
+        .page-link {
+            margin: 0 0.5em;
+        }
+
+        .page-link:before {
+            margin-right: 0.5em;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .site-nav {
+        font-size: 12px;
+    }
+}

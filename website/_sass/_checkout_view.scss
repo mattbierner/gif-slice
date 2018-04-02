@@ -1,0 +1,145 @@
+.checkout-page {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    padding: 0 1em;
+
+
+    .inline-slice-container {
+        .slice-canvas {
+            margin: 0 auto;
+            width: 100% !important;
+            height: 100%;
+            max-width: 400px;
+            max-height: 400px;
+        }
+    }
+}
+
+.checkout-page .section-header {
+    margin-bottom: 2em;
+
+    h1 {
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 0.2em;
+    }
+
+    .details {
+        color: $gray;
+        font-size: 12px;
+    }
+}
+
+.product-listing {
+    display: grid;
+    grid-template:
+        'header header select'
+        'info info select';
+    
+    border: 2px solid $light-gray;
+    margin-bottom: 2em;
+    padding: 0.6em;
+    text-align: left;
+
+    &.active {
+        border-color: $brand-color;
+    }
+
+    .product-title {
+        grid-area: header;
+    }
+
+    .product-info {
+        grid-area: info;
+        padding-right: 2em;
+    }
+
+    .product-select {
+        grid-area: select;
+        text-align: center;
+        align-self: center;
+    }
+
+    .product-price {
+        font-size: 1.2em;
+    }
+
+    .plus-shipping {
+        font-size: 12px;
+        color: $gray;
+    }
+
+    .selected {
+        color: $brand-color;
+    }
+}
+
+.address-form {
+    max-width: 400px;
+    margin: 0 auto;
+
+    .labeled-input {
+        width: 100%;
+        margin: 1em 0;
+    }
+}
+
+
+.cost-overview {
+    margin-bottom: 2em;
+
+    .cost-line-items {
+        margin-bottom: 1em;
+    }
+
+    .cost-line-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cost-line-item-label {
+        display: block;
+        text-align: right;
+        flex: 4;
+        margin-right: 1.2em;
+    }
+    
+    .cost-line-item-value {
+        display: block;
+        font-weight: bold;
+        text-align: left;
+        flex: 3;
+    }
+
+    .cost-divider {
+        max-width: 200px;
+        width: 100%;
+        border-top: 1px solid $light-gray;
+        margin: 0 auto;
+    }
+}
+
+.payment-section {
+    max-width: 400px;
+    margin: 0 auto;
+
+    .card-input {
+        margin-bottom: calc(2em + 1px);
+        padding-bottom: 0.2em;
+        border-bottom: 1px solid $text-color;
+
+        &.StripeElement--focus {
+            margin-bottom: calc(2em);
+            border-bottom: 2px solid $brand-color;
+        }
+    }
+
+    .email-input {
+        margin-bottom: 3em;
+    }
+}
