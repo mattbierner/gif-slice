@@ -7,6 +7,7 @@ export class SiteFooter extends React.PureComponent {
                 <nav>
                     <a href='/faq.html' target='_blank' >FAQ</a>
                     <a href='mailto:gifslice@gmail.com'>Contact</a>
+                    <a href='https://github.com/mattbierner/gif-slice/issues'>Report Issue</a>
                 </nav>
 
                 <p className='copyright'>Site &copy; 2018 <a href='https://mattbierner.com'>Matt Bierner</a><br />Gifs copyright original creators</p>
