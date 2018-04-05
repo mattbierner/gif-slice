@@ -3,15 +3,15 @@
 Source for [*Gif Slice*][site]
 
 # Building
-The website is TypeScript React app atop Jekyll
+The website is a TypeScript React app atop Jekyll
 
 ## Structure
 
 - `shared` — Shared sources between client and server side components
-    - `src` — Main TypeScript source code
+    - `src` — TypeScript source
 
 - `website` — Main website code
-    - `src` - Main TypeScript React source code.
+    - `src` - Main TypeScript React source
 
 ## Building the website
 
